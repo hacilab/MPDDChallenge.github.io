@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description"
+			content="ACMMM 2025 Grand Challenge – MPDD - The 1st Multimodal Emotion and Intent Joint Understanding Challenge">
+		<meta property="og:image" content="./img/">
+		<meta property="og:type" content="website">
+
+		<title>
+			ACMMM 2025 Challenge – MPDD - The 1st Multimodal Emotion and Intent Joint Understanding Challenge
+		</title>
+
+		<!-- Bootstrap Core CSS -->
+		<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="./css/agency.css" rel="stylesheet">
+
+		<!-- Custom Fonts -->
+		<link href="./css/font-awesome.min.css" rel="stylesheet">
+		<link href="./css/style.css" rel="stylesheet">
+		<!-- <link href="./css/css(1)" rel="stylesheet" type="text/css">
+    <link href="./css/css(2)" rel="stylesheet" type="text/css">
+    <link href="./css/css(3)" rel="stylesheet" type="text/css"> -->
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script type="text/javascript" async="" src="./js/analytics.js"></script>
+		<script async="" src="./js/js"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+
+			gtag('js', new Date());
+
+			gtag('config', 'UA-114495477-1');
+		</script>
+
+		<style>
+			table {
+			            width: 100%;
+			            border-collapse: collapse;
+			            margin: 20px 0;
+			            background-color: #fff;
+			        }
+			        th, td {
+			            border: 1px solid #ddd;
+			            padding: 8px;
+			            text-align: center;
+			        }
+			        th {
+			            background-color: #4CAF50;
+			            color: white;
+			        }
+			        .first-place {
+			            background-color: #FFD700; /* 金色，用于标识第一名 */
+			        }
+			        @media (max-width: 600px) {
+			            th, td {
+			                font-size: 12px;
+			            }
+			        }
+			
+			
+			
+		</style>
+	</head>
+
+	<body id="page-top" class="index">
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<!-- <li class="hidden active">
+                        <a href="https://MER2024.github.io/"></a>
+                    </li> -->
+						<li class="">
+							<a class="page-scroll" href="#HOME">HOME</a>
+						</li>
+						
+						
+						
+						<li>
+							<a class="page-scroll" href="#TSE">Track Setting and Evaluation</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#Dataset">Dataset</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#Rules">Rules</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#Registration">Registration</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#BaselineSystem">Baseline System and Testing Dataset</a>
+						</li>
+
+						<li>
+							<a class="page-scroll" href="#PaperSubmission">Paper Submission and Results Announcement</a>
+						</li>
+
+						<li>
+							<a class="page-scroll" href="#Timeline">Timeline (AOE Time)</a>
+						</li>
+
+						<li>
+							<a class="page-scroll" href="#Organization">Organizers</a>
+						</li>
+						
+						<li>
+							<a class="page-scroll" href="#GrandChallengeSession">Grand Challenge Session</a>
+						</li>
+						
+						<li>
+							<a class="page-scroll" href="#WeChatgroup">WeChat group</a>
+						</li>
+						
+						
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Header -->
+		<header_3>
+			<div class="container">
+				<div class="intro-text" style="color:white;">
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="intro-heading">MPDD Challenge@ACMMM2025</div>
+					<br><br>
+					<div class="intro-heading-large-2">Multimodal Personality-aware</div>
+					<br>
+					<div class="intro-heading-large-2">Depression Detection</div>
+					<br><br>
+					<br><br>
+				</div>
+			</div>
+		</header_3>
+
+		<!-- HOME Section -->
+		<section id="HOME" class="home-pad">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+					</div>
+				</div>
+				<div class="row text-justify">
+					<div class="col-md-12">
+
+						<h2>Call for Participation</h2>
+						<p class="large text-muted ">
+							Depression is a pervasive mental health disorder with a profound impact on global well being
+							, affecting millions and significantly hindering quality of life, productivity, and overall
+							health.  Many datasets primarily focus on establishing direct correlations between behaviora
+							l signals and depression levels.    This approach, while valuable, often fails to account for the nuanced individual variations in depressive symptoms.    Moreover, the demographic scope of existing datasets is predominantly confined to young adults, thereby overlooking other critical age groups, such as the elderly, who may present distinct patterns of depression.
+						</p>
+
+						<p class="large text-muted ">
+							The<b> Multimodal Personality-aware Depression Detection (MPDD)</b>aims to address these gaps
+							by integrating multiple data types (audio, video, text) with individual difference information such as personality traits, age, gender, and health conditions.   This challenge seeks to develop models that can accurately detect depression across a broader demographic, fostering more inclusive and effective mental health detection systems.
+						</p>
+
+						<p class="large text-muted ">
+							The advent of specialized datasets has been instrumental in advancing depression re search by providing multimodal data that can enhance the detection and understanding of depressive symptoms. For instance, the AVEC challenge has contributed rich audiovisual interview data annotated with depression-related information, facilitating more nuanced assessments. The DAIC-WoZ dataset has furthered our understanding by incorporating clinical interviews and PHQ-9 scores. Other datasets, including the Pitts burgh dataset, the D-Vlog dataset, the EATD-Corpus, the CMDC, and the MODMA, have expanded the scope by integrating diverse data types like EEG and utilizing standard depression scales for evaluation.  Additionally, datasets such as AMI GOS and DEAP have incorporated physiological data, offering insights into the physiological underpinnings of depression, while the SEED dataset provides EEG and eye movement data annotated with personality traits, highlighting the role of individual differences in depressive symptoms.
+						</p>
+
+						<p class="large text-muted ">
+							To advance the development of personalized and accurate depression detection systems, we are launching the<b> ACMMM 2025 Multimodal Personality-aware Depression Detection</b>.This challenge aims to push the boundaries of depression detection by integrating multimodal data (audio, video, text) with individual difference information such as personality traits, age, gender, and health conditions.
+						</p>
+
+						<p class="large text-muted ">
+							We have designed two tracks to address the unique challenges of depression detection in different populations. We warmly invite researchers from both academia and industry to participate and collaborate in finding innovative solutions to these important and real-world challenges.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		
+
+		<!-- Call for Papers Section -->
+		<section id="TSE" class="bg-mid-gray">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Track Setting and Evaluation</h2>
+					</div>
+				</div>
+				<div class="text-left" style="text-align: center;">
+					<div class="row text-justify">
+						<div class="col-md-12">
+							<h3>Track Setting</h3>
+							<p class="large text-muted">
+								<b>Track 1: Elderly Depression Detection(MPDD-Elderly)</b>.
+								focuses on detecting depression in the elderly population, leveraging data from 118 participants with audiovisual interviews, personality labels based on the BigFive-10 scale, health condition labels, and detailed demographic information. This track aims to explore how factors such as chronic illnesses, living condi- tions, and personality traits influence depression manifestation in older adults.
+							</p>
+
+							<p class="large text-muted">
+								<b>Track 2: Young Adult Depression Detection(MPDD-Young)</b>.
+								depression detection among young adults, a high-risk group often understudied. The dataset includes 110 participants with audiovisual recordings, personality labels, and demographic information. This track seeks to understand how factors like geography environment, age, gender, and personality traits contribute to depression in young adults.
+
+							</p>
+
+							<h3>Evaluation Metrics</h3>
+							<p class="large text-muted">
+								The MPDD Challenge employs key metrics to evaluate multimodal depression detection models. These metrics assess model performance across diverse datasets.
+							</p>
+
+							<p class="large text-muted">
+								<b>Accuracy</b> measures the proportion of correct predictions:
+							</p>
+
+							<div style="text-align: center;">
+								<img src="img/icassp2025/1.png" alt="" class="img-gs2">
+							</div>
+
+							<p class="large text-muted">
+								<b>F1 score </b> balances precision and recall, crucial for imbalanced datasets:
+							</p>
+
+							<div style="text-align: center;">
+								<img src="img/icassp2025/2.png" alt="" class="img-gs2">
+							</div>
+							<p class="large text-muted">
+								The final evaluation score for each track is calculated as the average of the scores across all classification tasks included in that track. This approach ensures a fair and comprehensive assessment of model performance across different tasks and datasets.
+							</p>
+							<div style="text-align: center;">
+								<img src="img/icassp2025/3.png" alt="" class="img-gs2">
+							</div>
+							<div style="text-align: center;">
+								<img src="img/icassp2025/4.png" alt="" class="img-gs2">
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Call for Papers Section -->
+		<section id="Dataset">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Dataset</h2>
+						<!-- <h3 class="section-subheading text-muted" style="font-size:large">Contact with us: <a href="mailto:fl4pwsdm@gmail.com">fl4pwsdm@gmail.com</a></h3> -->
+					</div>
+				</div>
+				<div class="row text-justify">
+					<div class="col-md-12">
+
+						<p class="large text-muted">
+							As compared to the existing datasets, the MPDD dataset significantly enhances the breadth of contextual diversity and the depth of annotation comprehensiveness, as underscored in Table 1.  By offering a more inclusive and granular depiction of depression, the MPDD dataset is poised to facilitate the evolution of sophisticated multimodal models.  These models are better equipped to navigate the intricacies of mental health conditions, particularly depression.  The dataset’s thorough annotation scheme is instrumental in discerning individual differences.  This capability is essential for fostering timely interventions and conducting precise assessments of depression, thereby contributing to the broader objective of improved mental health management.
+						</p>
+
+						<div style="text-align: center;"><img src="img/icassp2025/table.png" class="img-gs"></div>
+
+
+						<p class="large text-muted">
+							<b>Track 1: MPDD-Elderly Dataset:</b> The MPDD-Elderly dataset is a comprehensive resource tailored for the detection and analysis of depression among the elderly population. Comprising data from 118 elderly participants, this dataset is designed to support a variety of classification and regression tasks related to depression identification. The annotations within the MPDD-Elderly dataset are meticulously crafted to capture a broad spectrum of factors influencing depression in the elderly. They are grounded in the PHQ-9 Scale Scores, which offer a reliable quantitative measure of depressive symptoms, allowing for standardized assessment across the participant cohort. Personality traits are evaluated using the BigFive-10 scale, providing insights into the individual differences that may contribute to the manifestation of depression. The dataset also incorporates comprehensive demographic information, encompassing age, disease, family situation, and economic status, which paints a detailed picture of each participant’s background and potential stressors. Furthermore, disease labels are included to account for various health conditions, such as those related to the endocrine, circulatory system, and nervous system, recognizing the impact of physical health on mental health. This multifaceted approach to annotation ensures a nuanced understanding of depression in the elderly, facilitating the development of more precise and personalized assessment tools.
+						</p>
+
+						<p class="large text-muted">
+							The subdataset is structured to support both 3 types of classification tasks:</p>
+
+
+						<p class="large text-muted">
+							The subdataset is structured to support both 3 types of classification tasks:
+							<ul class="large text-muted" style="font-size: large;">
+								<li><b>Binary classification:</b> normal / depressed</li>
+								<li><b>Ternary classification:</b> normal / mildly depressed / severely depressed</li>
+								<li><b>Quinary classification:</b> normal / mildly depressed / moderately depressed / moderately severe / severe</li>
+							</ul>
+						</p>
+
+						<p class="large text-muted">
+							<b>Track 2: MPDD-Young Dataset:</b> The MPDD-Young dataset is designed to advance the field of multimodal depression detection, particularly four Young Adult Depression Detection. Comprising data from 110 young adults, this dataset offers a comprehensive view of depressive symptoms through various modalities and tasks. The annotations within the MPDD-Young dataset are multifaceted, providing a rich set of data for analysis. They are based on the PHQ-9 Scale Scores, which offer a quantitative measure of depressive symptoms, allowing for a standardized assessment of depression severity. Additionally, personality traits are evaluated using the BigFive-10 scale, which helps in understanding the individual differences that may influence the manifestation of depression. The dataset also includes demographic information such as gender, age, and birth region. This comprehensive profile of the participants enables a more nuanced analysis of depression, taking into account the diverse backgrounds and personal characteristics of the individuals involved.
+						</p>
+
+						<p class="large text-muted">
+							The dataset is structured to support both 3 types of classification tasks:
+						</p>
+
+						<p class="large text-muted">
+							The dataset is structured to support both 3 types of classification tasks:
+							<ul class="large text-muted" style="font-size: large;">
+								<li><b>Binary classification:</b> normal / depressed</li>
+								<li><b>Ternary classification:</b> normal / mildly depressed / severely depressed</li>
+							</ul>
+						</p>
+
+						<p class="large text-muted">
+							For both tracks, the data set is divided into a training set, a validation set, and a test set. 80% of the data set is used for training and validation, while the remaining 20% is used for testing.
+						</p>
+
+
+					</div>
+
+
+
+				</div>
+
+
+			</div>
+		</section>
+
+
+		<section id="Rules" class="bg-mid-gray">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Rules</h2>
+						<!-- <h3 class="section-subheading text-muted" style="font-size:large">Contact with us: <a href="mailto:fl4pwsdm@gmail.com">fl4pwsdm@gmail.com</a></h3> -->
+					</div>
+				</div>
+				<div class="row text-justify">
+					<div class="col-md-12">
+						<ul>
+							<li style="font-size: 20px;">
+								<b>Access to Data</b> Participants may freely use pre-trained weights obtained from open-source datasets or models to initialize their target models. This practice is allowed to facilitate faster development cycles and to encourage innovation in model architecture and algorithm design.
+							</li>
+
+							<li style="font-size: 20px;">
+								<b>Use of Pre-trained Models:</b> Participants may freely use pre-trained weights obtained from open-source datasets or models to initialize their target models. This practice is allowed to facilitate faster development cycles and to encourage innovation in model architecture and algorithm design.
+							</li>
+
+							<li style="font-size: 20px;">
+								<b>Restrictions on Data Usage:</b> To maintain the integrity of the challenge, participants are explicitly prohibited from using additional private or in-house datasets to pre-train their models. Compliance with this rule ensures that all participants are evaluated on an equal footing.
+							</li>
+
+							<li style="font-size: 20px;">
+								<b>Submission Limitations:</b> Participants are restricted to a maximum of five submission attempts per sub-challenge. Each submission will consist of the model’s predictions on the test partition, along with the corresponding model and checkpoints/weights.
+							</li>
+
+							<li style="font-size: 20px;">
+								<b>Evaluation Metrics:</b> The organizers will evaluate the submitted models using two predefined metrics: Accuracy and F1 Score. These metrics will be computed by comparing the participants’ predictions against the ground-truth labels.
+							</li>
+
+							<li style="font-size: 20px;">
+								<b>Final Ranking:</b> The final test results of each team will be used for the final ranking in the challenge. This ensures that the models are thoroughly tested and their performance is accurately assessed.
+							</li>
+
+							<li style="font-size: 20px;">
+								<b>Reproducibility:</b> All materials, including data, must be accessible to all participating teams to ensure that the models submitted by participants are fully reproducible.
+							</li>
+
+							<li style="font-size: 20px;">
+								<b>Organizer’s Role:</b> The organizers will not actively participate in the challenge but will undertake a re-evaluation of the findings from the best-performing systems in each sub-challenge to validate the results.
+							</li>
+
+							<li style="font-size: 20px;">
+								<b>Eligibility:</b> The challenge is open to any researcher from any organization based anywhere in the world, fostering a global collaborative environment in addressing the complex issue of depression detection.
+							</li>
+
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<!--Key Dates Section -->
+		<section id="Registration">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Registration</h2>
+						<!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3-->
+					</div>
+				</div>
+				<div class="row text-justify">
+					<div class="col-md-12">
+						<p class="large text-muted">
+							The rankings of our challenge are based on the CodaLab Leaderboard, so entrants will need to register on Codalab using the email provided on the EULA or the email that sends the EULA in order for entrants to upload their results and view the rankings. We will provide the CodaLab link when the challenge is released.
+						</p>
+
+						<p class="large text-muted">
+							User License Agreement Link: <a
+								href='https://github.com/hacilab/MPDD/blob/main/MPDD%20Dataset%20License%20Agreementt.pdf'
+								download>https://github.com/hacilab/MPDD/blob/main/MPDD%20Dataset%20License%20Agreementt.pdf</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<!-- Baseline System Section -->
+
+		<section id="BaselineSystem" class="bg-mid-gray">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Baseline System and Testing Dataset</h2>
+					</div>
+				</div>
+
+				<p class="large text-muted">
+					<!-- <b>Baseline paper:</b> <a href="xxx"> Coming soon</a> -->
+					<!-- <br> -->
+					<b>Baseline code:</b> <a href="https://github.com/hacilab/MPDD">
+					https://github.com/hacilab/MPDD </a>
+					<br>
+					
+					
+					<b>Contact email:</b> <a href="sstcneu@163.com">sstcneu@163.com</a> , <a
+						href="fuchangzeng@qhd.neu.edu.cn">fuchangzeng@qhd.neu.edu.cn</a>
+					<br>
+					
+					
+					<b>Testing dataset link:</b> <a href="https://github.com/hacilab/MPDD">https://github.com/hacilab/MPDD</a>
+
+
+					
+					
+				</p>
+			</div>
+		</section>
+
+
+		<!--Key Dates Section -->
+		<section id="PaperSubmission">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Paper Submission and Results Announcement </h2>
+						<!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3-->
+					</div>
+				</div>
+				<div class="row text-justify">
+					<div class="col-md-12">
+						<p class="large text-muted">
+							To be eligible for the final evaluation, each team must submit a paper detailing their proposed methodology and the achieved results. This paper should include thoroughly explained source code, well-trained models, and associated checkpoints. The submissions will undergo a rigorous peer-review process conducted by the challenge technical program committee. Only contributions that meet the terms and conditions will be eligible for consideration. The organizers will not participate actively but will re-evaluate the findings from the best-performing systems in each sub-challenge.
+						</p>
+						<p class="large text-muted">
+							<b>ACM Multimedia 2025 Submission Rules for the MPDD Challenge：</b>Due to the official requirement, the paper submission rules for our challenge are set as follows:
+						</p>
+
+						<p class="large text-muted">
+							1. We have two Tracks: Track 1 – Elderly Depression Detection and Track 2 – Young Adult Depression Detection. The Top 1 team in each track will be recommended to ACM Multimedia 2025.
+						</p>
+
+						<p class="large text-muted">
+							2. If a team manages to secure Top 1 in both Track 1 and Track 2, they will be entitled to an additional paper submission, allowing them to submit up to two papers.
+						</p>
+						<br/>
+						<p class="large text-muted">
+							<b>ACM Multimedia 2025  MPDD Challenge Results Announcement：</b> t.b.a.
+						</p>
+						</ul>
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Paper Submission System Section -->
+		<section id="Timeline" class="bg-mid-gray">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Timeline</h2>
+					</div>
+				</div>
+
+				<p class="large text-muted">
+					<b>March 1st, 2025:</b> Launching Challenge website and call for participation poster.
+					<br>
+					<b>March 5th, 2025:</b> Registration open.
+					<br>
+					<b>March 5th, 2025:</b> Training and validation sets released.
+					<br>
+					<b>March 15th, 2025:</b> Baseline system and code released.
+					<br>
+					<b>April 1st, 2025:</b> Testing set and results submission website released.
+					<br>
+					<b>May 4th, 2025:</b> Deadline for submitting results.
+					<br>
+					<b>May 20th, 2025:</b> Result announced.
+					<br>
+					<b>June 4th, 2025:</b> Paper submission deadline.
+					<br>
+					<b>July 24th, 2025:</b> Paper acceptance notification.
+					<br>
+					<b>August 26th, 2025:</b> Camera ready paper submission deadline.
+				</p>
+			</div>
+		</section>
+
+
+		<section id="Organization">
+
+			<div class="row">
+				<div class="col-lg-12 text-center" style="padding-bottom: 20px;">
+					<h2 class="section-heading">ORGANISERS</h2>
+				</div>
+			</div>
+
+			<div class="row text-center">
+				<div class="large text-muted" style="font-size: large;">
+					organizers:
+				</div>
+			</div>
+
+			<div class="container ">
+				<div class="row">
+					<div class="col-sm-1">
+						&nbsp;
+					</div>
+
+
+					<div class="col-sm-2">
+						<div class="team-member">
+							<img src="img/ChangzengFu.png" class="img-responsive img-circle" alt="" width="200" height="300">
+							<h4><a href="">Changzeng Fu</a></h4>
+							<p class="text-muted"> Northeastern University, China / Osaka University, Japan </p>
+						</div>
+					</div>
+
+
+
+					<div class="col-sm-2">
+						&nbsp;
+					</div>
+
+					<div class="col-sm-2">
+						<div class="team-member">
+							<img src="img/ShiqiZhao.png" class="img-responsive img-circle" alt="" width="300" height="300">
+							<h4><a href="">Shiqi Zhao</a>
+							</h4>
+							<p class="text-muted"> Northeastern University, China </p>
+						</div>
+					</div>
+
+
+
+
+
+					<div class="col-sm-2">
+						&nbsp;
+					</div>
+
+					<div class="col-sm-2">
+						<div class="team-member">
+							<img src="img/WenboShi.png" class="img-responsive img-circle" alt="" width="300"
+								 height="300">
+							<h4><a href="https://zeroqiaoba.github.io/Homepage/">Wenbo Shi</a></h4>
+							<p class="text-muted"> Northeastern University, China </p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="container ">
+				<div class="row">
+					<div class="col-sm-1">
+						&nbsp;
+					</div>
+
+
+					<div class="col-sm-2">
+						<div class="team-member">
+							<img src="img/JunfengYao.png" class="img-responsive img-circle" alt="" width="200" height="300">
+							<h4><a href="">Junfeng Yao</a></h4>
+							<p class="text-muted"> Xiamen University, China </p>
+						</div>
+					</div>
+
+
+
+					<div class="col-sm-2">
+						&nbsp;
+					</div>
+
+					<div class="col-sm-2">
+						<div class="team-member">
+							<img src="img/YuliangZhao.png" class="img-responsive img-circle" alt="" width="300" height="300">
+							<h4><a href="">Yuliang Zhao</a>
+							</h4>
+							<p class="text-muted"> Northeastern University, China </p>
+						</div>
+					</div>
+
+
+
+
+
+					<div class="col-sm-2">
+						&nbsp;
+					</div>
+
+					<div class="col-sm-2">
+						<div class="team-member">
+							<img src="img/ChaoranLiu.png" class="img-responsive img-circle" alt="" width="300"
+								 height="300">
+							<h4><a href="https://zeroqiaoba.github.io/Homepage/">Chaoran Liu</a></h4>
+							<p class="text-muted"> National Information Institute, Japan / RIKEN, Japan </p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="container ">
+				<div class="row">
+					<div class="col-sm-1">
+						&nbsp;
+					</div>
+
+
+					<div class="col-sm-2">
+						<div class="team-member">
+							<img src="img/YuichiroYoshikawa.png" class="img-responsive img-circle" alt="" width="200" height="300">
+							<h4><a href="">Yuichiro Yoshikawa</a></h4>
+							<p class="text-muted"> Osaka University, Japan </p>
+						</div>
+					</div>
+
+
+
+					<div class="col-sm-2">
+						&nbsp;
+					</div>
+
+					<div class="col-sm-2">
+						<div class="team-member">
+							<img src="img/HiroshiIshiguro.png" class="img-responsive img-circle" alt="" width="300" height="300">
+							<h4><a href="">Hiroshi Ishiguro</a>
+							</h4>
+							<p class="text-muted"> Osaka University, Japan </p>
+						</div>
+					</div>
+
+
+				</div>
+
+				<div class="row text-center">
+					<div class="large text-muted" style="font-size: large;">
+						contributors:
+					</div>
+				</div>
+
+
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-1">
+							&nbsp;
+						</div>
+
+
+						<div class="col-sm-2">
+							<div class="team-member">
+								<img src="img/SiyangSong.png" class="img-responsive img-circle" alt="" width="300" height="300">
+								<h4><a href="https://www.colips.org/~eleliha/">Siyang Song</a></h4>
+								<p class="text-muted"> University of Cambridge, UK </p>
+							</div>
+						</div>
+
+
+
+						<div class="col-sm-2">
+							&nbsp;
+						</div>
+
+						<div class="col-sm-2">
+							<div class="team-member">
+								<img src="img/MingyueNiu.png" class="img-responsive img-circle" alt="" width="300"
+									 height="300">
+								<h4><a href="http://www.schuller.one">Mingyue Niu</a></h4>
+								<p class="text-muted"> Osaka University, Japan </p>
+							</div>
+						</div>
+
+
+
+
+
+						<div class="col-sm-2">
+							&nbsp;
+						</div>
+
+						<div class="col-sm-2">
+							<div class="team-member">
+								<img src="img/KaifengSu.png" class="img-responsive img-circle" alt="" width="300" height="300">
+								<h4><a href="xxx">Kaifeng Su </a></h4>
+								<p class="text-muted"> Northeastern University, China </p>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-1">
+							&nbsp;
+						</div>
+
+
+						<div class="col-sm-2">
+							<div class="team-member">
+								<img src="img/YikaiSu.png" class="img-responsive img-circle" alt="" width="300" height="300">
+								<h4><a href="https://www.colips.org/~eleliha/">Yikai Su</a></h4>
+								<p class="text-muted"> Northeastern University, China </p>
+							</div>
+						</div>
+
+
+
+						<div class="col-sm-2">
+							&nbsp;
+						</div>
+
+						<div class="col-sm-2">
+							<div class="team-member">
+								<img src="img/FengkuiQian.png" class="img-responsive img-circle" alt="" width="300"
+									 height="300">
+								<h4><a href="http://www.schuller.one">Fengkui Qian</a></h4>
+								<p class="text-muted"> Northeastern University, China </p>
+							</div>
+						</div>
+
+
+
+
+
+						<div class="col-sm-2">
+							&nbsp;
+						</div>
+
+						<div class="col-sm-2">
+							<div class="team-member">
+								<img src="img/ZelinFu.png" class="img-responsive img-circle" alt="" width="300" height="300">
+								<h4><a href="xxx">Zelin Fu </a></h4>
+								<p class="text-muted"> Northeastern University, China </p>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-1">
+							&nbsp;
+						</div>
+
+
+						<div class="col-sm-2">
+							<div class="team-member">
+								<img src="img/XinheKuang.png" class="img-responsive img-circle" alt="" width="300" height="300">
+								<h4><a href="https://www.colips.org/~eleliha/">Xinhe Kuang</a></h4>
+								<p class="text-muted"> Northeastern University, China </p>
+							</div>
+						</div>
+
+
+
+						<div class="col-sm-2">
+							&nbsp;
+						</div>
+
+						<div class="col-sm-2">
+							<div class="team-member">
+								<img src="img/JiachengDong.png" class="img-responsive img-circle" alt="" width="300"
+									 height="300">
+								<h4><a href="http://www.schuller.one"> Jiacheng Dong</a></h4>
+								<p class="text-muted"> Northeastern University, China </p>
+							</div>
+						</div>
+
+
+
+
+
+						<div class="col-sm-2">
+							&nbsp;
+						</div>
+
+						<div class="col-sm-2">
+							<div class="team-member">
+								<img src="img/QiZhang.png" class="img-responsive img-circle" alt="" width="300" height="300">
+								<h4><a href="xxx">Qi Zhang </a></h4>
+								<p class="text-muted"> Northeastern University, China </p>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-1">
+							&nbsp;
+						</div>
+
+
+						<div class="col-sm-2">
+							<div class="team-member">
+								<img src="img/LingweiKong.png" class="img-responsive img-circle" alt="" width="300" height="300">
+								<h4><a href="https://www.colips.org/~eleliha/">Lingwei Kong</a></h4>
+								<p class="text-muted"> Northeastern University, China </p>
+							</div>
+						</div>
+
+
+
+						<div class="col-sm-2">
+							&nbsp;
+						</div>
+
+						<div class="col-sm-2">
+							<div class="team-member">
+								<img src="img/YinghaoSun.png" class="img-responsive img-circle" alt="" width="300"
+									 height="300">
+								<h4><a href="http://www.schuller.one"> Yinghao Sun</a></h4>
+								<p class="text-muted"> Northeastern University, China </p>
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+
+		<!--  -->
+		<section id="GrandChallengeSession" class="bg-mid-gray">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">Grand Challenge Session</h2>
+					</div>
+				</div>
+
+				<p class="large text-muted">
+					According to the official requirements of the Grand Challenge, our challenge session will be conducted in the following format:
+				<ol class="large text-muted" style="font-size: large;">
+					<li>Overview presentation by the GC organizer.</li>
+					<li>Each challenge participant delivers a 1-minute spotlight presentation.</li>
+					<li>Poster session, during which challenge participants present their work and detailed findings.</li>
+					<li>Discussion session/panel discussion, where key findings from the GC session are shared and debated.</li>
+				</ol>
+				</p>
+			</div>
+		</section>
+
+
+		<!-- Paper WeChatgroup Section -->
+		<section id="WeChatgroup">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">WeChat group</h2>
+					</div>
+				</div>
+
+				<p class="large text-muted">
+					We are pleased to inform you that a WeChat group will be created to enhance communication among participants of MPDD 2025. Please find the QR code for the group below.
+				</p>
+
+				<div class="wechat-box">
+					<img src="img/wechat/wx-group.jpg" alt="" class="wechat-img">
+				</div>
+			</div>
+		</section>
+
+		
+		
+
+		<!-- jQuery -->
+		<script src="./js/jquery.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="./js/bootstrap.min.js"></script>
+
+		<!-- Plugin JavaScript -->
+		<script src="./js/jquery.easing.min.js"></script>
+		<script src="./js/classie.js"></script>
+		<script src="./js/cbpAnimatedHeader.js"></script>
+
+		<!-- Contact Form JavaScript -->
+		<script src="./js/contact_me.js"></script>
+
+		<!-- Custom Theme JavaScript -->
+		<script src="./js/agency.js"></script>
+
+
+
+
+	</body>
+</html>
