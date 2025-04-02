@@ -8,6 +8,7 @@
 			content="ACMMM 2025 Grand Challenge – MPDD - The 1st Multimodal Emotion and Intent Joint Understanding Challenge">
 		<meta property="og:image" content="./img/">
 		<meta property="og:type" content="website">
+		
 
 		<title>
 			Multimodal Personality-aware Depression Detection
@@ -25,7 +26,7 @@
 		<!-- <link href="./css/css(1)" rel="stylesheet" type="text/css">
     <link href="./css/css(2)" rel="stylesheet" type="text/css">
     <link href="./css/css(3)" rel="stylesheet" type="text/css"> -->
-
+		<!-- MathJax support for LaTeX rendering -->
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script type="text/javascript" async="" src="./js/analytics.js"></script>
 		<script async="" src="./js/js"></script>
@@ -227,36 +228,29 @@
 								depression detection among young adults, a high-risk group often understudied. The dataset includes 110 participants with audiovisual recordings, personality labels, and demographic information. This track seeks to understand how factors like geography environment, age, gender, and personality traits contribute to depression in young adults.
 
 							</p>
-
 							<h3>Evaluation Metrics</h3>
-							<p class="large text-muted">
-								The MPDD Challenge employs key metrics to evaluate multimodal depression detection models. These metrics assess model performance across diverse datasets.
-							</p>
 
 							<p class="large text-muted">
-								<b>Accuracy</b> measures the proportion of correct predictions. This value will be the average of weighted and unweighted scores:
+								The MPDD Challenge employs unweighted Accuracy (Acc) and unweighted F1 score (F1) to evaluate multimodal depression detection models. The final evaluation score for each track is calculated as the average of the scores across all classification tasks included in that track:
 							</p>
-
-							<div style="text-align: center;">
-								<img src="img/icassp2025/1.png" alt="" class="img-gs2">
-							</div>
-
-							<p class="large text-muted">
-								<b>F1 score </b> balances precision and recall, crucial for imbalanced datasets. This value will be the average of weighted and unweighted scores:
+							
+							<p style="text-align: center; font-size: 25px;">
+								Acc<sub>track</sub> = Average(Acc<sup>task1</sup> + Acc<sup>task2</sup> + &hellip;)
 							</p>
-
-							<div style="text-align: center;">
-								<img src="img/icassp2025/2.png" alt="" class="img-gs2">
-							</div>
-							<p class="large text-muted">
-								The final evaluation score for each track is calculated as the average of the scores across all classification tasks included in that track. This approach ensures a fair and comprehensive assessment of model performance across different tasks and datasets.
+							
+							<p style="text-align: center; font-size: 25px;">
+								F<sub>track</sub> = Average(F1<sup>task1</sup> + F1<sup>task2</sup> + &hellip;)
 							</p>
-							<div style="text-align: center;">
-								<img src="img/icassp2025/3.png" alt="" class="img-gs2">
-							</div>
-							<div style="text-align: center;">
-								<img src="img/icassp2025/4.png" alt="" class="img-gs2">
-							</div>
+							
+							<p style="text-align: center; font-size: 25px;">
+								Score = (Acc<sub>track</sub> + F<sub>track</sub>) / 2
+							</p>
+							
+
+							
+							
+							
+							
 
 						</div>
 					</div>
